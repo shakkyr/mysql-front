@@ -1,0 +1,314 @@
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.8;
+  height: 100%;
+}
+
+.task {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color:rgb(58, 58, 58);
+}
+.userContainer{
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color:rgb(58, 58, 58);
+}
+
+.task:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.task .title {
+  flex: 20%;
+  border: 1px solid lightgray;
+  background-color: rgb(7, 157, 127);
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.task .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.task .footer {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: rgb(7, 157, 127);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer .username {
+  flex: 50%;
+}
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.likeBttn {
+  color: rgba(250, 250, 250, 0.8);
+}
+.unlikeBttn {
+  color: white;
+}
+
+.buttons label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+
+/* !Create Task css ===============================*/
+
+
+.createTaskPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid rgb(7, 157, 127);
+  border-radius: 5px;
+  background-color:rgb(58, 58, 58);
+  color:white;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: rgb(7, 157, 127);
+  border-radius: 5px;
+  color: white;
+  
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: rgb(17, 106, 88);
+}
+
+span {
+  color: red;
+}
+
+/* !Navbar css ===============================*/
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(7, 157, 127);
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+
+/* !task css ===============================*/
+
+.taskPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: 89vh;
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: 89vh;
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(58, 58, 58);
+  color:white;
+}
+
+.rightSide .addWorkerContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.addWorkerContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addWorkerContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.addWorkerContainer input {
+  border: 2px solid dodgerblue;
+}
+
+.rightSide .listOfWorkers {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfWorkers .worker {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#individual {
+  height: 500px;
+  width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+
+/*!======= login ==================*/
+
+.loginContainer {
+  color:azure;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 100px;
+  border: 2px solid black;
+  background-color:rgb(58, 58, 58);
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: rgb(7, 157, 127);
+  color: white;
+}
+
+.loginContainer input {
+  border: 2px solid rgb(7, 157, 127);
+}
